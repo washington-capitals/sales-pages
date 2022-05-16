@@ -1,7 +1,26 @@
-<iframe class="ytplayer" height="100%" frameborder="0" src="https://www.youtube.com/embed/2XnfkE3R3EU?playlist=2XnfkE3R3EU&controls=0&loop=1&disablekb=1&autoplay=1&modestbranding=0&mute=1" allow="autoplay" width="100%"></iframe>
+<div class="videoWrapper"><iframe class="ytplayer" height="100%" frameborder="0"
+        src="https://www.youtube.com/embed/2XnfkE3R3EU?playlist=2XnfkE3R3EU&controls=0&loop=1&disablekb=1&autoplay=1&modestbranding=0&mute=1"
+        allow="autoplay" width="100%"></iframe>
+</div>
 
+<style type="text/css">
+    .ytplayer {
+        pointer-events: none;
+    }
 
-<style type="text/css">.ytplayer {
-pointer-events: none;
-}
+    .videoWrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+        /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+    }
+
+    .videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
 </style>
